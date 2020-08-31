@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name OnstepRampsShield)(type Legacy)(uri ${KIPRJMOD}/library/OnstepRampsShield.lib)(options "")(descr ""))
+)
