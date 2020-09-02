@@ -134,22 +134,14 @@ F 3 "" H 1000 1550 50  0001 C CNN
 	1    1150 1650
 	0    -1   -1   0   
 $EndComp
-Text GLabel 2350 6700 0    50   Input ~ 0
-VCC
-Text GLabel 3750 6750 0    50   Input ~ 0
-VCC
 Text GLabel 5100 4650 0    50   Input ~ 0
 VCC
 Text GLabel 5550 2250 2    50   Input ~ 0
-VCC
-Text GLabel 2950 6700 2    50   Input ~ 0
-GND
-Text GLabel 3750 7050 0    50   Input ~ 0
-GND
+I2C_VCC
 Text GLabel 5100 4550 0    50   Input ~ 0
 GND
 Text GLabel 5550 2350 2    50   Input ~ 0
-GND
+I2C_GND
 Text GLabel 1000 1800 3    50   Input ~ 0
 E0_2B
 Text GLabel 1200 1800 3    50   Input ~ 0
@@ -345,18 +337,14 @@ NoConn ~ 10100 4050
 $Comp
 L Device:Buzzer BZ1
 U 1 1 5F550329
-P 2600 5300
-F 0 "BZ1" V 2651 5113 50  0000 R CNN
-F 1 "Buzzer" V 2560 5113 50  0000 R CNN
-F 2 "Buzzer_Beeper:Buzzer_12x9.5RM7.6" V 2575 5400 50  0001 C CNN
-F 3 "~" V 2575 5400 50  0001 C CNN
-	1    2600 5300
+P 7300 4100
+F 0 "BZ1" V 7351 3913 50  0000 R CNN
+F 1 "Buzzer" V 7260 3913 50  0000 R CNN
+F 2 "Buzzer_Beeper:Buzzer_12x9.5RM7.6" V 7275 4200 50  0001 C CNN
+F 3 "~" V 7275 4200 50  0001 C CNN
+	1    7300 4100
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	2500 5850 2500 5400
-Wire Wire Line
-	2700 5400 2700 5850
 Text GLabel 4350 6950 2    50   Input ~ 0
 CS_DS3234
 Text GLabel 7450 1450 2    50   Input ~ 0
@@ -367,14 +355,8 @@ Text GLabel 7450 1550 2    50   Input ~ 0
 SCK
 Text GLabel 7450 1250 2    50   Input ~ 0
 CS_BME280
-Text GLabel 7450 1850 2    50   Input ~ 0
-GND
-Text GLabel 7450 1650 2    50   Input ~ 0
-VCC
-Text GLabel 7450 3200 2    50   Input ~ 0
-VCC
 Text GLabel 7450 3300 2    50   Input ~ 0
-GND
+I2C_GND
 Text GLabel 4350 6750 2    50   Input ~ 0
 CS_BME280
 Text GLabel 850  6900 0    50   Input ~ 0
@@ -438,28 +420,6 @@ F 3 "" H 2250 2250 50  0001 C CNN
 	1    2400 2350
 	0    -1   -1   0   
 $EndComp
-Text GLabel 1450 6800 2    50   Input ~ 0
-GND
-Text GLabel 1450 6700 2    50   Input ~ 0
-VCC
-Text GLabel 850  6800 0    50   Input ~ 0
-GND
-Text GLabel 850  6700 0    50   Input ~ 0
-VCC
-Text GLabel 2700 4500 1    50   Input ~ 0
-GND
-Text GLabel 2600 4500 1    50   Input ~ 0
-VCC
-Text GLabel 2600 5850 1    50   Input ~ 0
-VCC
-Text GLabel 1250 5850 1    50   Input ~ 0
-GND
-Text GLabel 1150 5850 1    50   Input ~ 0
-VCC
-Text GLabel 1200 4500 1    50   Input ~ 0
-GND
-Text GLabel 1100 4500 1    50   Input ~ 0
-VCC
 $Comp
 L Connector_Generic:Conn_01x08 BME280
 U 1 1 5F5045D5
@@ -492,4 +452,34 @@ NoConn ~ 7450 2900
 NoConn ~ 7450 2800
 NoConn ~ 7450 2700
 NoConn ~ 7450 2600
+Text GLabel 7450 3200 2    50   Input ~ 0
+I2C_VCC
+Text GLabel 3750 6750 0    50   Input ~ 0
+SPI_VCC
+Text GLabel 3750 7050 0    50   Input ~ 0
+SPI_GND
+Text GLabel 7450 1650 2    50   Input ~ 0
+SPI_VCC
+Text GLabel 7450 1850 2    50   Input ~ 0
+SPI_GND
+NoConn ~ 2600 4500
+NoConn ~ 2700 4500
+NoConn ~ 1100 4500
+NoConn ~ 1200 4500
+NoConn ~ 1150 5850
+NoConn ~ 1250 5850
+NoConn ~ 2600 5850
+NoConn ~ 2700 5850
+Text GLabel 2500 5850 1    50   Input ~ 0
+BUZZER
+Text GLabel 7200 4200 3    50   Input ~ 0
+BUZZER
+Text GLabel 7400 4200 3    50   Input ~ 0
+GND
+NoConn ~ 2350 6700
+NoConn ~ 2950 6700
+NoConn ~ 850  6700
+NoConn ~ 850  6800
+NoConn ~ 1450 6800
+NoConn ~ 1450 6700
 $EndSCHEMATC
