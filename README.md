@@ -27,5 +27,6 @@ At the moment, the board takes the following components:
 - PEC sensor connector, 3-Pin 3.5mm audio jack
 - Buzzer
 - DS3231 RTC via I2C
-- BME280 environmental sensor via SPI
+- BME280 environmental sensor via I2C
+- HC05 Bluetooth module via Serial
 
