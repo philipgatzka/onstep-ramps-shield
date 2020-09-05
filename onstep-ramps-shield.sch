@@ -71,12 +71,12 @@ $EndComp
 $Comp
 L OnstepRampsShield:RAMPS_ENDSTOPS J_SER1
 U 1 1 5F4D74CE
-P 5950 1450
-F 0 "J_SER1" V 5635 1433 50  0000 C CNN
-F 1 "RAMPS_ENDSTOPS" V 5726 1433 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 5950 1450 50  0001 C CNN
-F 3 "" H 5950 1450 50  0001 C CNN
-	1    5950 1450
+P 5950 1200
+F 0 "J_SER1" V 5635 1183 50  0000 C CNN
+F 1 "RAMPS_ENDSTOPS" V 5726 1183 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 5950 1200 50  0001 C CNN
+F 3 "" H 5950 1200 50  0001 C CNN
+	1    5950 1200
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -190,9 +190,9 @@ Text GLabel 3100 1900 3    50   Input ~ 0
 Y_2A
 Text GLabel 3250 3900 1    50   Input ~ 0
 STATUS_LED2
-Text GLabel 5800 1400 0    50   Input ~ 0
+Text GLabel 5800 1150 0    50   Input ~ 0
 TX1
-Text GLabel 5800 1500 0    50   Input ~ 0
+Text GLabel 5800 1250 0    50   Input ~ 0
 RX1
 NoConn ~ 3100 6200
 NoConn ~ 3100 6300
@@ -414,14 +414,14 @@ F 3 "~" H 7400 2550 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Connector:Conn_01x04_Female J_HC05
+L Connector:Conn_01x04_Female J_HC5
 U 1 1 5F53C3AF
-P 6550 1600
-F 0 "J_HC05" H 6442 1175 50  0000 C CNN
-F 1 "Conn_01x04_Female" H 6442 1266 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 6550 1600 50  0001 C CNN
-F 3 "~" H 6550 1600 50  0001 C CNN
-	1    6550 1600
+P 6550 1350
+F 0 "J_HC5" H 6442 925 50  0000 C CNN
+F 1 "Conn_01x04_Female" H 6442 1016 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 6550 1350 50  0001 C CNN
+F 3 "~" H 6550 1350 50  0001 C CNN
+	1    6550 1350
 	-1   0    0    1   
 $EndComp
 Text GLabel 5800 2450 0    50   Input ~ 0
@@ -438,13 +438,13 @@ Text GLabel 7600 2650 2    50   Input ~ 0
 I2C_SDA
 Text GLabel 7600 2450 2    50   Input ~ 0
 GND_I2C1
-Text GLabel 6750 1400 2    50   Input ~ 0
+Text GLabel 6750 1150 2    50   Input ~ 0
 VCC
-Text GLabel 6750 1500 2    50   Input ~ 0
+Text GLabel 6750 1250 2    50   Input ~ 0
 GND
-Text GLabel 6750 1600 2    50   Input ~ 0
+Text GLabel 6750 1350 2    50   Input ~ 0
 RX1
-Text GLabel 6750 1700 2    50   Input ~ 0
+Text GLabel 7250 1450 2    50   Input ~ 0
 TX1
 NoConn ~ 5800 3100
 NoConn ~ 5800 3200
@@ -638,4 +638,37 @@ Wire Wire Line
 	5700 2650 5800 2650
 NoConn ~ 3350 3900
 NoConn ~ 1850 3900
+$Comp
+L Device:R R4
+U 1 1 5F53F1FB
+P 6750 1600
+F 0 "R4" H 6680 1554 50  0000 R CNN
+F 1 "1k" H 6680 1645 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6680 1600 50  0001 C CNN
+F 3 "~" H 6750 1600 50  0001 C CNN
+	1    6750 1600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5F53F606
+P 7100 1600
+F 0 "R5" H 7170 1646 50  0000 L CNN
+F 1 "2k" H 7170 1555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7030 1600 50  0001 C CNN
+F 3 "~" H 7100 1600 50  0001 C CNN
+	1    7100 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 1450 7100 1450
+Wire Wire Line
+	7100 1450 6950 1450
+Wire Wire Line
+	6950 1450 6950 1750
+Wire Wire Line
+	6950 1750 6750 1750
+Connection ~ 7100 1450
+Text GLabel 7100 1750 3    50   Input ~ 0
+GND
 $EndSCHEMATC
