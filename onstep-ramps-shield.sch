@@ -414,10 +414,10 @@ F 3 "~" H 7400 2550 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Connector:Conn_01x04_Female J_HC5
+L Connector:Conn_01x04_Female J_HC05
 U 1 1 5F53C3AF
 P 6550 1600
-F 0 "J_HC5" H 6442 1175 50  0000 C CNN
+F 0 "J_HC05" H 6442 1175 50  0000 C CNN
 F 1 "Conn_01x04_Female" H 6442 1266 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 6550 1600 50  0001 C CNN
 F 3 "~" H 6550 1600 50  0001 C CNN
