@@ -444,7 +444,7 @@ Text GLabel 6750 1250 2    50   Input ~ 0
 GND
 Text GLabel 6750 1350 2    50   Input ~ 0
 RX1
-Text GLabel 7250 1450 2    50   Input ~ 0
+Text GLabel 7750 1450 2    50   Input ~ 0
 TX1
 NoConn ~ 5800 3100
 NoConn ~ 5800 3200
@@ -641,34 +641,34 @@ NoConn ~ 1850 3900
 $Comp
 L Device:R R4
 U 1 1 5F53F1FB
-P 6750 1600
-F 0 "R4" H 6680 1554 50  0000 R CNN
-F 1 "1k" H 6680 1645 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6680 1600 50  0001 C CNN
-F 3 "~" H 6750 1600 50  0001 C CNN
-	1    6750 1600
-	-1   0    0    1   
+P 7500 1450
+F 0 "R4" H 7430 1404 50  0000 R CNN
+F 1 "1k" H 7430 1495 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7430 1450 50  0001 C CNN
+F 3 "~" H 7500 1450 50  0001 C CNN
+	1    7500 1450
+	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R5
 U 1 1 5F53F606
-P 7100 1600
-F 0 "R5" H 7170 1646 50  0000 L CNN
-F 1 "2k" H 7170 1555 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7030 1600 50  0001 C CNN
-F 3 "~" H 7100 1600 50  0001 C CNN
-	1    7100 1600
+P 7150 1700
+F 0 "R5" H 7220 1746 50  0000 L CNN
+F 1 "2k" H 7220 1655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7080 1700 50  0001 C CNN
+F 3 "~" H 7150 1700 50  0001 C CNN
+	1    7150 1700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7250 1450 7100 1450
-Wire Wire Line
-	7100 1450 6950 1450
-Wire Wire Line
-	6950 1450 6950 1750
-Wire Wire Line
-	6950 1750 6750 1750
-Connection ~ 7100 1450
-Text GLabel 7100 1750 3    50   Input ~ 0
+Text GLabel 7150 1850 3    50   Input ~ 0
 GND
+Wire Wire Line
+	7750 1450 7650 1450
+Wire Wire Line
+	7350 1450 7150 1450
+Wire Wire Line
+	7150 1450 7150 1550
+Wire Wire Line
+	7150 1450 6750 1450
+Connection ~ 7150 1450
 $EndSCHEMATC
