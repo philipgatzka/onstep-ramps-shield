@@ -334,7 +334,7 @@ U 1 1 5F57945F
 P 10400 4600
 F 0 "J_PEC1" H 10382 4925 50  0000 C CNN
 F 1 "AudioJack3" H 10382 4834 50  0000 C CNN
-F 2 "Connector_Audio:Jack_3.5mm_CUI_SJ1-3533NG_Horizontal" H 10400 4600 50  0001 C CNN
+F 2 "Connector_Audio:Jack_3.5mm_CUI_SJ1-3533NG_Horizontal_CircularHoles" H 10400 4600 50  0001 C CNN
 F 3 "~" H 10400 4600 50  0001 C CNN
 	1    10400 4600
 	1    0    0    -1  
@@ -345,7 +345,7 @@ U 1 1 5F579A8B
 P 10350 5350
 F 0 "J_RET1" H 10332 5675 50  0000 C CNN
 F 1 "AudioJack3" H 10332 5584 50  0000 C CNN
-F 2 "Connector_Audio:Jack_3.5mm_CUI_SJ1-3533NG_Horizontal" H 10350 5350 50  0001 C CNN
+F 2 "Connector_Audio:Jack_3.5mm_CUI_SJ1-3533NG_Horizontal_CircularHoles" H 10350 5350 50  0001 C CNN
 F 3 "~" H 10350 5350 50  0001 C CNN
 	1    10350 5350
 	1    0    0    -1  
