@@ -5,18 +5,13 @@ carries a bit of additional hardware necessary for an
 [OnStep](https://github.com/hjd1964/OnStep)
 telescope controller.
 
-![screenshot](onstep-ramps-shield.webp)
+![screenshot](./img/screenshot.webp)
 
 There are different ways to build an OnStep, including using a completely custom
 board, but I liked the modular approach and used an Arduino Mega in combination
 with a RAMPS shield. The custom boards of course offer places to fit connectors
 and such which the Arduino/RAMPS combination doesn't, so I'm trying to build
 this board to help with that.
-
-## Status
-
-**WIP**, I've not tested or built the board yet and will update this document once
-there's more to say about it.
 
 At the moment, the board takes the following components:
 - RA motor connector, RJ12 6p6c
@@ -29,4 +24,18 @@ At the moment, the board takes the following components:
 - DS3231 RTC via I2C
 - BME280 environmental sensor via I2C
 - HC05 Bluetooth module via Serial
+
+## Status
+
+**WIP**
+
+### Update
+
+I've had the first copies of v1.0.4 made 🎉 ...unfortunately I've got the
+focuser connector distances _slightly_ wrong, which renders this version
+unusable.
+
+![overview](./img/overview.webp)
+
+![assembly](./img/assembly.webp)
 
