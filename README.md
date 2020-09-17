@@ -31,9 +31,9 @@ At the moment, the board takes the following components:
 
 ### Update
 
-I've had the first copies of v1.0.4 made 🎉 ...unfortunately I've got the
-focuser connector distances _slightly_ wrong, which renders this version
-unusable.
+I've had the first copies of [v1.0.4](https://github.com/philipgatzka/onstep-ramps-shield/releases/tag/v1.0.4)
+made 🎉 ...unfortunately I've got the focuser connector distances _slightly_
+wrong, which renders this version unusable.
 
 ![overview](./img/overview.webp)
 
