@@ -18,18 +18,14 @@ At the moment, the board takes the following components:
 - DEC motor connector, RJ12 6p6c
 - Focuser motor 1 connector, RJ12 6p6c
 - Focuser motor 2 connector, RJ12 6p6c
-- Polar alignment scope illuminator connector, 3-Pin 3.5mm audio jack
-- PEC sensor connector, 3-Pin 3.5mm audio jack
+- (Polar alignment scope illuminator connector, 3-Pin 3.5mm audio jack)
+- (PEC sensor connector, 3-Pin 3.5mm audio jack)
 - Buzzer
 - DS3231 RTC via I2C
 - BME280 environmental sensor via I2C
 - HC05 Bluetooth module via Serial
 
-## Status
-
-**WIP**
-
-### Update
+### Update v1.0.4
 
 I've had the first copies of [v1.0.4](https://github.com/philipgatzka/onstep-ramps-shield/releases/tag/v1.0.4)
 made 🎉 ...unfortunately I've got the focuser connector distances _slightly_
@@ -37,5 +33,17 @@ wrong, which renders this version unusable.
 
 ![overview](./img/overview.webp)
 
-![assembly](./img/assembly.webp)
+
+### Update v1.0.5
+
+[v1.0.5](https://github.com/philipgatzka/onstep-ramps-shield/releases/tag/v1.0.5)
+is actually working 👌 I don't think it's possible to solder the
+3.5mm audio jacks in place though, so to actually complete this they'd need to
+be moved elsewhere.
+
+![top_1_0_5](./img/top_1_0_5.webp)
+
+![side_1_0_5](./img/side_1_0_5.webp)
+
+![bottom_1_0_5](./img/bottom_1_0_5.webp)
 
