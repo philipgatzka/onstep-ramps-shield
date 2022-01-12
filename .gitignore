@@ -27,3 +27,4 @@ fp-info-cache
 
 # Exported gerber files
 *.zip
+*.tar.gz
